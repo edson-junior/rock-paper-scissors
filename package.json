@@ -1,0 +1,25 @@
+{
+  "name": "rock-papper-scissors",
+  "version": "0.0.1",
+  "description": "A rock paper scissors game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edson Domingos Junior",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-eslatest-node6": "^1.0.1",
+    "compression": "^1.6.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-watch": "^4.3.11"
+  }
+}
