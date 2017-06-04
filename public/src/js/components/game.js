@@ -33,4 +33,4 @@ const compare = (a, b) => {
   }
 };
 
-export compare;
+export {compare, PLAYER_A, PLAYER_B};
