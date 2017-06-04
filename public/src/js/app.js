@@ -1,41 +1,10 @@
 'use strict';
 
-let player_a = {
-  'choice': "paper",
-  'points': 0,
-  'points_wrapper': '.player-a-points'
-};
-
-let player_b = {
-  'choice': null,
-  'points': 0,
-  'points_wrapper': '.player-b-points'
-};
+import {compare, PLAYER_A, PLAYER_B} from '../public/src/js/components/game';
 
 let matches = 0;
 let result = null;
 let button = document.querySelector('.play');
-
-const compare = (a, b) => {
-  matches++;
-
-  if (a === b) {
-    result = "tie";
-    return;
-  }
-
-  if (a === "paper") {
-    if (b === "rock") {
-      result = "paper wins";
-      return player_a.points = player_a.points+1;
-    } else {
-      if (b === "scissors") {
-        result = "scissors wins";
-        return player_b.points = player_b.points+1;
-      }
-    }
-  }
-};
 
 const choiceHandler = () => {
   if (matches >= 1000) return;

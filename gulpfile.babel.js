@@ -7,7 +7,7 @@ import clean from 'gulp-clean';
 gulp.task('js', () => {
   return gulp.src('public/src/js/app.js')
     .pipe(babel({
-      presets: ['eslatest-node6']
+      presets: ['eslatest-node6', 'import-export']
     }))
     .pipe(gulp.dest('public/dist/js/'));
 });
