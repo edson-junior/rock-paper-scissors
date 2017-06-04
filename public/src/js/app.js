@@ -16,21 +16,20 @@ let matches = 0;
 let result = null;
 let button = document.querySelector('.play');
 
-const compare = (choice1, choice2) => {
+const compare = (a, b) => {
   matches++;
 
-  if (choice1 === choice2) {
-    // alert("The result is a tie!");
+  if (a === b) {
     result = "tie";
     return;
   }
 
-  if (choice1 === "paper") {
-    if (choice2 === "rock") {
+  if (a === "paper") {
+    if (b === "rock") {
       result = "paper wins";
       return player_a.points = player_a.points+1;
     } else {
-      if (choice2 === "scissors") {
+      if (b === "scissors") {
         result = "scissors wins";
         return player_b.points = player_b.points+1;
       }
