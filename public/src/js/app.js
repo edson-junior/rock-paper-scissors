@@ -1,25 +1,33 @@
 'use strict';
 
-import {compare, PLAYER_A, PLAYER_B} from '../public/src/js/components/game';
+import {compare, PLAYER_A, PLAYER_B, matches, result, result_a, result_b} from './components/game';
 
-let matches = 0;
-let result = null;
-let button = document.querySelector('.play');
+let play_button = document.querySelector('.play');
+
+window.compare = compare;
+window.PLAYER_A = PLAYER_A;
+window.PLAYER_B = PLAYER_B;
+window.matches = matches;
+window.result = result;
+window.result_a = result_a;
+window.result_b = result_b;
 
 const choiceHandler = () => {
   if (matches >= 1000) return;
 
-  player_b.choice = Math.random() * 100;
-  player_b.choice < 34 ? player_b.choice = "rock" :
-  player_b.choice >= 67 ? player_b.choice = "paper" :
-  player_b.choice = "scissors";
+  PLAYER_B.choice = Math.random() * 100;
 
-  compare(player_a.choice, player_b.choice);
+  PLAYER_B.choice < 34 ? PLAYER_B.choice = "rock" :
+  PLAYER_B.choice >= 67 ? PLAYER_B.choice = "paper" :
+  PLAYER_B.choice = "scissors";
 
-  document.querySelector(player_a.points_wrapper).innerHTML = player_a.points;
-  document.querySelector(player_b.points_wrapper).innerHTML = player_b.points;
+  compare(PLAYER_A.choice, PLAYER_B.choice);
+
+  document.querySelector(PLAYER_A.points_wrapper).innerHTML = PLAYER_A.points;
+  document.querySelector(PLAYER_B.points_wrapper).innerHTML = PLAYER_B.points;
+  document.querySelector('.choices .player-b-choice').innerHTML = PLAYER_B.choice;
   document.querySelector('.round-number').innerHTML = matches;
   document.querySelector('.round-result').innerHTML = result;
 };
 
-button.addEventListener('click', choiceHandler);
+play_button.addEventListener('click', choiceHandler);

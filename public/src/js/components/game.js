@@ -1,5 +1,11 @@
 'use strict';
 
+let result = null;
+let result_a = "paper wins";
+let result_b = "scissors wins";
+
+let matches = 0;
+
 let PLAYER_A = {
   'choice': "paper",
   'points': 0,
@@ -22,15 +28,15 @@ const compare = (a, b) => {
 
   if (a === "paper") {
     if (b === "rock") {
-      result = "paper wins";
+      result = result_a;
       return PLAYER_A.points = PLAYER_A.points+1;
     } else {
       if (b === "scissors") {
-        result = "scissors wins";
+        result = result_b;
         return PLAYER_B.points = PLAYER_B.points+1;
       }
     }
   }
 };
 
-export {compare, PLAYER_A, PLAYER_B};
+export {compare, PLAYER_A, PLAYER_B, matches, result, result_a, result_b};

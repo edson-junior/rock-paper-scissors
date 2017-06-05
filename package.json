@@ -14,6 +14,7 @@
     "prompt": "^1.0.0"
   },
   "devDependencies": {
+    "babel-loader": "^7.0.0",
     "babel-preset-eslatest-node6": "^1.0.1",
     "babel-preset-import-export": "^1.0.2",
     "chai": "^4.0.1",
@@ -23,6 +24,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-clean": "^0.3.2",
+    "gulp-live-server": "0.0.30",
     "gulp-watch": "^4.3.11",
     "gulp-webpack": "^1.5.0",
     "mocha": "^3.4.2"
