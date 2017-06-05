@@ -43,6 +43,6 @@ Same as above, but online: http://furukawa.herokuapp.com/
 The actual site, complete with front, backend and ecommerce platform ATG: http://www.efurukawa.com/
 
 Latest achievements:
-https://forum.nos.pt/
-https://forum.telfort.nl/
-https://nl.community.bnpparibasfortis.be/
+- https://forum.nos.pt/
+- https://forum.telfort.nl/
+- https://nl.community.bnpparibasfortis.be/
