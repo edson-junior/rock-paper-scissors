@@ -11,6 +11,12 @@ It's been built with: ES6, Webpack, Gulp, Chai/Mocha
 - Player A always chooses Paper
 - Player B chooses randomly
 
+## Usage:
+
+```javascript
+npm i && gulp
+```
+
 ## Advantages:
 
 - It uses Webpack. A more robust, easy-to-use build tool instead of RequireJS.
