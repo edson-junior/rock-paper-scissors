@@ -13,3 +13,5 @@ app.set('view engine', 'ejs');
 app.get("/", (req, res) => res.render(path.join(__dirname, 'public/src/views/index')));
 
 app.listen(app.get('port'));
+
+console.log(`Server is at: http://localhost:${app.get('port')}`);
