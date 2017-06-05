@@ -1,33 +1,20 @@
-# Coding Assignment Front End
+# Rock, Paper, Scissors (lizard, spock!!!)
 
-- The programming language is JavaScript
-- The code should be completed by unit tests
-- Please describe shortly the advantages and disadvantages of your design
-- The build tool could be Grunt or Gulp, but it can be different providing building steps
+It's been built with: ES6, Webpack, Gulp, Chai/Mocha
 
-Please solve this task according to the standards like you would in your normal work.
-Expected to be used: RequireJS, Grunt or Gulp, Chai/Mocha
-Optionally to be used from ES6: what suits your needs
-
-Task: Rock-Paper-Scissors
-
-Build a game in which two players compete in a game of Rock-Paper-Scissors with different
-strategies. Who will win more rounds? The rules:
+## The rules:
 
 - Scissors beats Paper
 - Rock beat Scissors
 - Paper beats Rock
-
 - If both players choose the same, the round is counted as a tie.
-
-Implement two players:
-
 - Player A always chooses Paper
 - Player B chooses randomly
 
-The game consists of 1000 rounds of above two players competing. The output of the program
-should be like the following:
+## Advantages:
 
-"Player A wins 310 of 1000 games"
-"Player B wins 370 of 1000 games"
-"Tie: 320 of 1000 games"
+- It uses Webpack. A more robust, easy-to-use build tool instead of RequireJS.
+
+## Disadvantages:
+
+- "Player A wins 310 of 1000 games", "Player B wins 370 of 1000 games", "Tie: 320 of 1000 games" didn't make a whole lot of sense to me, so I didn't implement it. Maybe we should do a pair-programming out of this, if possible.
