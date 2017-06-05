@@ -16,10 +16,18 @@ It's been built with: ES6, Webpack, Gulp, Chai/Mocha
 ```javascript
 npm i && gulp
 ```
+## Run test:
+
+```javascript
+npm run test
+```
 
 ## Advantages:
 
-- It uses Webpack. A more robust, easy-to-use build tool instead of RequireJS.
+- es6! :);
+- code is readable, sweet and to the point;
+- It uses Webpack. A more robust, easy-to-use build tool instead of RequireJS;
+- very easy to run localy.
 
 ## Disadvantages:
 
