@@ -31,7 +31,7 @@ npm run test
 
 ## Disadvantages:
 
-- "Player A wins 310 of 1000 games", "Player B wins 370 of 1000 games", "Tie: 320 of 1000 games" didn't make a whole lot of sense to me, so I didn't implement it. Maybe we should do a pair-programming out of this, if possible.
+"Player A wins 310 of 1000 games", "Player B wins 370 of 1000 games", "Tie: 320 of 1000 games" didn't make a whole lot of sense to me, so I didn't implement it. Maybe we should do a pair-programming out of this, if possible.
 
 ## Extras
 Here's some more of my codes (it's almost a year and a half old, and back then I did use requireJS :) ).
