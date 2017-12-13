@@ -12,7 +12,7 @@ const App = createReactClass({
   render() {
     return (
       <form className="container" onSubmit={this.playHandle}>
-        <h1 className="page-header">Rock Papers Scissors</h1>
+        <h1 className="page-header">Rock, Paper, Scissors (lizard, spock!!!)</h1>
         <Players/>
         <Score/>
         <button className="play btn btn-default btn-primary">PLAAAAAAY!!!!</button>
