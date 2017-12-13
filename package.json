@@ -12,5 +12,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "create-react-class": "^15.6.2"
   }
 }

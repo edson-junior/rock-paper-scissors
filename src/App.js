@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import createReactClass from 'create-react-class';
+import Players from './components/Players'
+import Score from './components/Score'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
+const App = createReactClass({
+  playHandle(e) {
+    e.preventDefault();
+    console.log(this);
+  },
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <form className="container" onSubmit={this.playHandle}>
+        <h1 className="page-header">Rock Papers Scissors</h1>
+        <Players/>
+        <Score/>
+        <button className="play btn btn-default btn-primary">PLAAAAAAY!!!!</button>
+      </form>
     );
   }
-}
+});
 
 export default App;
