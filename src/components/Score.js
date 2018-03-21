@@ -1,7 +1,6 @@
-import React from 'react';
-import createReactClass from 'create-react-class';
+import React, { Component } from 'react';
 
-const Players = createReactClass({
+class Players extends Component {
   render() {
     return (
       <div className="panel panel-default">
@@ -31,6 +30,6 @@ const Players = createReactClass({
       </div>
     )
   }
-});
+}
 
-export default Players;
+export default Players
