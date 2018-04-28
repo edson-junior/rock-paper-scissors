@@ -1,7 +1,5 @@
 # Rock, Paper, Scissors (lizard, spock!!!)
 
-### tests and refactoring pending
-
 ## The rules:
 
 - Scissors beats Paper
