@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors (lizard, spock!!!)
+# Rock, Paper, Scissors
 
 ## The rules:
 
