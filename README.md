@@ -22,3 +22,7 @@ Then, run the following command to run the server:
 ```bash
 npm start
 ```
+
+possible future features
+- table of matches and the results
+- countdown for each match
