@@ -6,9 +6,8 @@
 - Rock beat Scissors
 - Paper beats Rock
 - If both players choose the same, the round is counted as a tie.
-- Player A always chooses Paper
-- Player B chooses randomly
-- Player A wins 310 of 1000 games, Player B wins 370 of 1000 games, Tie: 320 of 1000 games
+- Player A (Computer) always chooses Paper
+- Player B (Human) chooses randomly
 
 ### Run
 
