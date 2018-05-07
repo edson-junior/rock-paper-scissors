@@ -1,5 +1,7 @@
 # Rock, Paper, Scissors
 
+** refactoring in progress **
+
 ## The rules:
 
 - Scissors beats Paper
@@ -9,19 +11,7 @@
 - Player A (Computer) always chooses Paper
 - Player B (Human) chooses randomly
 
-### Run
-
-First of all, run the following command in your terminal to install the dependencies:
-
-```bash
-npm install
-```
-
-Then, run the following command to run the server:
-
-```bash
-npm start
-```
+---
 
 possible future features
 - table of matches and the results
