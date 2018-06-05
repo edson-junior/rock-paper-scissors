@@ -19,10 +19,9 @@
     "airbnb"
   ],
   "rules": {
-    "strict": [
-      2,
-      "safe"
-    ],
-    "no-console": 1
+    "strict": [2, "safe"],
+    "no-console": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": 0
   }
 }

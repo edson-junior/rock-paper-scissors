@@ -6,7 +6,7 @@ class App extends Component {
       <div>
         <h3>Rock Paper Scissors</h3>
       </div>
-    ) 
+    );
   }
 }
 
