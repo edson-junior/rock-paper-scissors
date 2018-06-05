@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders properly 1`] = `
-<div>
+<React.Fragment>
   <h3>
     Rock Paper Scissors
   </h3>
-</div>
+  <Play />
+</React.Fragment>
 `;

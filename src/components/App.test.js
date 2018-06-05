@@ -16,4 +16,8 @@ describe('App', () => {
   it('should have title', () => {
     expect(app.find('h3').text()).toEqual('Rock Paper Scissors');
   });
+
+  it('should have a `Play` component', () => {
+    expect(app.find('Play').exists()).toBe(true);
+  });
 });
