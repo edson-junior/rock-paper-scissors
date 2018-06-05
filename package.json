@@ -6,7 +6,7 @@
   "scripts": {
     "dev:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
     "dev:nodemon": "./node_modules/.bin/nodemon start.js",
-    "dev": "concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
+    "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
     "test": "./node_modules/.bin/jest --watch"
   },
   "repository": {
