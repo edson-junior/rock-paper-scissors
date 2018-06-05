@@ -4,6 +4,9 @@
   "description": "A yet another rock paper scissors game",
   "main": "index.js",
   "scripts": {
+    "dev:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
+    "dev:nodemon": "./node_modules/.bin/nodemon start.js",
+    "dev": "concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
     "test": "./node_modules/.bin/jest --watch"
   },
   "repository": {
@@ -16,12 +19,19 @@
     "url": "https://github.com/edson-junior/rock-paper-scissors/issues"
   },
   "homepage": "https://github.com/edson-junior/rock-paper-scissors#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^3.5.1",
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -29,11 +39,12 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.9.1",
     "file-loader": "^1.1.11",
     "jest": "^23.1.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "nodemon": "^1.17.5",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.2",

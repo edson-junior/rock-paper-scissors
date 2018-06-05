@@ -11,7 +11,12 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           'babel-loader',
-          'eslint-loader'
+          {
+            loader: 'eslint-loader',
+            options: {
+              fix: true
+            }
+          } 
         ]
       },
       {
@@ -20,8 +25,8 @@ module.exports = {
       },
       { 
         test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
-        use: "file-loader",
         use: [
+          'file-loader',
           {
             loader: 'file-loader',
             options: {

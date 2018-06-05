@@ -36,6 +36,11 @@ build/Release
 node_modules/
 jspm_packages/
 
+# compiled files directories
+public/dist/
+src/css/style.css
+src/css/style.css.map
+
 # TypeScript v1 declaration files
 typings/
 
