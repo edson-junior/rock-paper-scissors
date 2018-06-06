@@ -1,17 +1,17 @@
 import * as constants from './constants';
 
-export const rock = rock => {
+export const addRock = rock => ({
   type: constants.ROCK,
-  rock
-}
+  rock,
+});
 
-export const paper = paper => {
+export const addPaper = paper => ({
   type: constants.PAPER,
-  paper
-}
+  paper,
+});
 
-export const scissors = scissors => {
+export const addScissors = scissors => ({
   type: constants.SCISSORS,
-  scissors
-}
+  scissors,
+});
 
