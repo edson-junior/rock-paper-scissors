@@ -5,17 +5,17 @@ const play = (state = [], action) => {
     case constants.ROCK:
       return {
         ...state,
-        rock: 'rock',
+        rock: action.rock,
       };
     case constants.PAPER:
       return {
         ...state,
-        paper: 'paper',
+        paper: action.paper,
       };
     case constants.SCISSORS:
       return {
         ...state,
-        scissors: 'scissors',
+        scissors: action.scissors,
       };
     default:
       return state;
