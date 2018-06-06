@@ -21,9 +21,12 @@
   "homepage": "https://github.com/edson-junior/rock-paper-scissors#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "prop-types": "^15.6.1",
     "pug": "^2.0.3",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
