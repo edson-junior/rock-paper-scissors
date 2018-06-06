@@ -1,16 +1,25 @@
-import * as constants from './constants';
+import * as constants from '../actions/constants';
 
 const play = (state = [], action) => {
-  switch (constants) {
+  switch (action.type) {
     case constants.ROCK:
-      return console.log('rock');
+      return {
+        ...state,
+        rock: 'rock',
+      };
     case constants.PAPER:
-      return console.log('paper');
+      return {
+        ...state,
+        paper: 'paper',
+      };
     case constants.SCISSORS:
-      return console.log('scissors');
+      return {
+        ...state,
+        scissors: 'scissors',
+      };
     default:
-      state
+      return state;
   }
-}
+};
 
 export default play;

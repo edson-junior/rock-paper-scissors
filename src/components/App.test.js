@@ -18,6 +18,6 @@ describe('App', () => {
   });
 
   it('should have a `Play` component', () => {
-    expect(app.find('Play').exists()).toBe(true);
+    expect(app.find('Connect(Play)').exists()).toBe(true);
   });
 });

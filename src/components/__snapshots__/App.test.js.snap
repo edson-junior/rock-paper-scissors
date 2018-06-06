@@ -5,6 +5,6 @@ exports[`App renders properly 1`] = `
   <h3>
     Rock Paper Scissors
   </h3>
-  <Play />
+  <Connect(Play) />
 </React.Fragment>
 `;
