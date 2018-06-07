@@ -27,7 +27,7 @@ describe('Play', () => {
     afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
-      const rock = 'test';
+      const rock = 'rock';
       const payload = { type: constants.ROCK, rock };
 
       play.find('.rock').simulate('click');
@@ -35,7 +35,7 @@ describe('Play', () => {
     });
 
     it('should dispatch paper', () => {
-      const paper = 'test2';
+      const paper = 'paper';
       const payload = { type: constants.PAPER, paper };
 
       play.find('.paper').simulate('click');
@@ -43,7 +43,7 @@ describe('Play', () => {
     });
 
     it('should dispatch scissors', () => {
-      const scissors = 'test3';
+      const scissors = 'scissors';
       const payload = { type: constants.SCISSORS, scissors };
 
       play.find('.scissors').simulate('click');
