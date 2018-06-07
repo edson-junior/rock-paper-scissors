@@ -2,6 +2,7 @@ import React from 'react';
 import { mount, configure } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Play from './Play';
+import * as constants from '../actions/constants';
 import Adapter from 'enzyme-adapter-react-16';
 import configureStore from 'redux-mock-store';
 
@@ -11,11 +12,7 @@ const initialState = [];
 const middlewares = []
 const mockStore = configureStore(middlewares)
 const store = mockStore(initialState);
-
-const props = { 
-  store: store
-};
-
+const props = { store };
 const play = mount(<Play { ...props } />);
 
 describe('Play', () => {
@@ -35,23 +32,26 @@ describe('Play', () => {
     });
 
     it('should dispatch rock', () => {
-      play.find('.rock').simulate('click');
+      const rock = 'test';
+      const payload = { type: constants.ROCK, rock };
 
-      const payload = { type: 'ROCK', rock: 'test' };
+      play.find('.rock').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch paper', () => {
-      play.find('.paper').simulate('click');
+      const paper = 'test2';
+      const payload = { type: constants.PAPER, paper };
 
-      const payload = { type: 'PAPER', paper: 'test2' };
+      play.find('.paper').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch scissors', () => {
-      play.find('.scissors').simulate('click');
+      const scissors = 'test3';
+      const payload = { type: constants.SCISSORS, scissors };
 
-      const payload = { type: 'SCISSORS', scissors: 'test3' };
+      play.find('.scissors').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
   });
