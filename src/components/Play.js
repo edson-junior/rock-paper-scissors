@@ -14,9 +14,9 @@ class Play extends Component {
 
     return (
       <Fragment>
-        <button className="rock" onClick={() => onRock('test')}>rock</button>
-        <button className="paper" onClick={() => onPaper('test2')}>paper</button>
-        <button className="scissors" onClick={() => onScissors('test3')}>scissors</button>
+        <button className="rock" onClick={() => onRock('rock')}>rock</button>
+        <button className="paper" onClick={() => onPaper('paper')}>paper</button>
+        <button className="scissors" onClick={() => onScissors('scissors')}>scissors</button>
       </Fragment>
     );
   }

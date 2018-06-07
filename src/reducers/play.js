@@ -1,22 +1,48 @@
 import * as constants from '../actions/constants';
 
-const play = (state = [], action) => {
+function compare(state, user) {
+  const computer = 'paper';
+
+  if (computer === user) {
+    return {
+      ...state,
+      result: 'tie',
+      matches: state.matches + 1,
+    };
+  }
+
+  if (computer === 'paper') {
+    if (user === 'rock') {
+      return {
+        ...state,
+        result: computer,
+        computer: state.computer + 1,
+        matches: state.matches + 1,
+      };
+    }
+    if (user === 'scissors') {
+      return {
+        ...state,
+        result: user,
+        user: state.user + 1,
+        matches: state.matches + 1,
+      };
+    }
+  }
+
+  return state;
+}
+
+const play = (state = {
+  user: 0, computer: 0, matches: 0, result: null,
+}, action) => {
   switch (action.type) {
     case constants.ROCK:
-      return {
-        ...state,
-        rock: action.rock,
-      };
+      return compare(state, action.rock);
     case constants.PAPER:
-      return {
-        ...state,
-        paper: action.paper,
-      };
+      return compare(state, action.paper);
     case constants.SCISSORS:
-      return {
-        ...state,
-        scissors: action.scissors,
-      };
+      return compare(state, action.scissors);
     default:
       return state;
   }
