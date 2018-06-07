@@ -11,13 +11,8 @@ describe('Play', () => {
   describe('when the user dispatches an item', () => {
     let actions;
 
-    beforeEach(() => {
-      actions = store.getActions();
-    });
-
-    afterEach(() => {
-      store.clearActions();
-    });
+    beforeEach(() => actions = store.getActions());
+    afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
       const rock = 'test';

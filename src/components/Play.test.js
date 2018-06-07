@@ -23,13 +23,8 @@ describe('Play', () => {
   describe('when user clicks on an item', () => {
     let actions;
 
-    beforeEach(() => {
-      actions = store.getActions();
-    });
-
-    afterEach(() => {
-      store.clearActions();
-    });
+    beforeEach(() => actions = store.getActions());
+    afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
       const rock = 'test';
