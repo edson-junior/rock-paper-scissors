@@ -1,8 +1,17 @@
 import * as constants from '../actions/constants';
 
 function compare(state, user) {
+  let computer;
   const randomize = Math.floor(Math.random() * 100);
-  const computer = randomize < 34 ? 'rock' : randomize >= 67 ? 'paper' : 'scissors';
+
+  if (randomize < 34) {
+    computer = 'rock';
+  } else if (randomize >= 67) {
+    computer = 'paper';
+  } else {
+    computer = 'scissors';
+  }
+
   const computerWins = {
     ...state,
     result: computer,
