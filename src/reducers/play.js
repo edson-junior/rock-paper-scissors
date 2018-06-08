@@ -33,9 +33,7 @@ function compare(state, user) {
   return state;
 }
 
-const play = (state = {
-  user: 0, computer: 0, matches: 0, result: null,
-}, action) => {
+const play = (state = constants.initialState, action) => {
   switch (action.type) {
     case constants.ROCK:
       return compare(state, action.rock);
