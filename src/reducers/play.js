@@ -1,7 +1,21 @@
 import * as constants from '../actions/constants';
 
 function compare(state, user) {
-  const computer = 'paper';
+  const randomize = Math.floor(Math.random() * 100);
+  const computer = randomize < 34 ? 'rock' : randomize >= 67 ? 'paper' : 'scissors';
+  const computerWins = {
+    ...state,
+    result: computer,
+    computer: state.computer + 1,
+    matches: state.matches + 1,
+  };
+
+  const userWins = {
+    ...state,
+    result: user,
+    user: state.user + 1,
+    matches: state.matches + 1,
+  };
 
   if (computer === user) {
     return {
@@ -11,23 +25,25 @@ function compare(state, user) {
     };
   }
 
-  if (computer === 'paper') {
-    if (user === 'rock') {
-      return {
-        ...state,
-        result: computer,
-        computer: state.computer + 1,
-        matches: state.matches + 1,
-      };
+  if (user === 'rock') {
+    if (computer === 'scissors') {
+      return userWins;
     }
-    if (user === 'scissors') {
-      return {
-        ...state,
-        result: user,
-        user: state.user + 1,
-        matches: state.matches + 1,
-      };
+    return computerWins;
+  }
+
+  if (user === 'paper') {
+    if (computer === 'rock') {
+      return userWins;
     }
+    return computerWins;
+  }
+
+  if (user === 'scissors') {
+    if (computer === 'rock') {
+      return computerWins;
+    }
+    return userWins;
   }
 
   return state;
