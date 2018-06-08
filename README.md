@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-✂️ A rock/paper/scissors game that plays with itself
+✂️ A yet another rock, paper, scissors game
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
