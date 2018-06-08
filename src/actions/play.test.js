@@ -2,7 +2,7 @@ import configureStore from 'redux-mock-store';
 import * as constants from './constants';
 import { addRock, addPaper, addScissors } from '../actions/play';
 
-const initialState = [];
+const initialState = constants.initialState;
 const middlewares = []
 const mockStore = configureStore(middlewares)
 const store = mockStore(initialState);
@@ -15,23 +15,23 @@ describe('Play', () => {
     afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
-      const rock = 'test';
+      const rock = 'rock';
       const payload = { type: constants.ROCK, rock };
       store.dispatch(addRock(rock));
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch paper', () => {
-      const paper = 'test'
+      const paper = 'paper'
       const payload = { type: constants.PAPER, paper };
-      store.dispatch(addPaper('test'));
+      store.dispatch(addPaper(paper));
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch scissors', () => {
-      const scissors = 'test';
+      const scissors = 'scissors';
       const payload = { type: constants.SCISSORS, scissors };
-      store.dispatch(addScissors('test'));
+      store.dispatch(addScissors(scissors));
       expect(actions[0]).toEqual(payload);
     });
   });

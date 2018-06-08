@@ -8,7 +8,7 @@ import configureStore from 'redux-mock-store';
 
 configure({ adapter: new Adapter() });
 
-const initialState = [];
+const initialState = constants.initialState;
 const middlewares = []
 const mockStore = configureStore(middlewares)
 const store = mockStore(initialState);
@@ -27,24 +27,21 @@ describe('Play', () => {
     afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
-      const rock = 'rock';
-      const payload = { type: constants.ROCK, rock };
+      const payload = { type: constants.ROCK, rock: 'rock' };
 
       play.find('.rock').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch paper', () => {
-      const paper = 'paper';
-      const payload = { type: constants.PAPER, paper };
+      const payload = { type: constants.PAPER, paper: 'paper' };
 
       play.find('.paper').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
 
     it('should dispatch scissors', () => {
-      const scissors = 'scissors';
-      const payload = { type: constants.SCISSORS, scissors };
+      const payload = { type: constants.SCISSORS, scissors: 'scissors' };
 
       play.find('.scissors').simulate('click');
       expect(actions[0]).toEqual(payload);

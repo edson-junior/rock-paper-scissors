@@ -17,7 +17,14 @@ exports[`Play should render properly 1`] = `
     onPaper={[Function]}
     onRock={[Function]}
     onScissors={[Function]}
-    store={Array []}
+    store={
+      Object {
+        "computer": 0,
+        "matches": 0,
+        "result": null,
+        "user": 0,
+      }
+    }
     storeSubscription={
       Subscription {
         "listeners": Object {
