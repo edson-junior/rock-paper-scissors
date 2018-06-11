@@ -1,5 +1,11 @@
 import * as constants from '../actions/constants';
 
+/**
+ * Compares the choices and returns the result of said choices.
+ * @param {object} state - The redux state.
+ * @param {string} user - The choices made by the user.
+ * @returns {object} processed state.
+ */
 function compare(state, user) {
   let computer;
   const randomize = Math.floor(Math.random() * 100);
@@ -58,6 +64,12 @@ function compare(state, user) {
   return state;
 }
 
+/**
+ * Reducer function that handles the choices of computer/user.
+ * @param {object} state - The redux state.
+ * @param {string} action - The choices made by the user.
+ * @returns {object} processed state.
+ */
 const play = (state = constants.initialState, action) => {
   switch (action.type) {
     case constants.ROCK:
