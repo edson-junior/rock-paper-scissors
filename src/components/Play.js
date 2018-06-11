@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Results from './Results';
 import { addRock, addPaper, addScissors } from '../actions/play';
 
 /**
@@ -8,15 +9,19 @@ import { addRock, addPaper, addScissors } from '../actions/play';
  * @param {object} props - The mapped props.
  * @returns {*} The rendered component.
  */
-const Play = ({ onRock, onPaper, onScissors }) => (
+const Play = ({
+  store, onRock, onPaper, onScissors,
+}) => (
   <Fragment>
     <button className="rock" onClick={() => onRock('rock')}>rock</button>
     <button className="paper" onClick={() => onPaper('paper')}>paper</button>
     <button className="scissors" onClick={() => onScissors('scissors')}>scissors</button>
+    <Results store={store} />
   </Fragment>
 );
 
 Play.propTypes = {
+  store: PropTypes.shape({}).isRequired,
   onRock: PropTypes.func.isRequired,
   onPaper: PropTypes.func.isRequired,
   onScissors: PropTypes.func.isRequired,

@@ -65,6 +65,39 @@ exports[`Play should render properly 1`] = `
     >
       scissors
     </button>
+    <Results
+      store={
+        Object {
+          "computer": 0,
+          "matches": 0,
+          "result": null,
+          "user": 0,
+        }
+      }
+    >
+      <div>
+        <h3>
+          Result: You win!
+        </h3>
+        <div>
+          <h3>
+            Score
+          </h3>
+          <p>
+            User: 
+            0
+          </p>
+          <p>
+            Computer: 
+            0
+          </p>
+          <p>
+            Matches: 
+            0
+          </p>
+        </div>
+      </div>
+    </Results>
   </Play>
 </Connect(Play)>
 `;

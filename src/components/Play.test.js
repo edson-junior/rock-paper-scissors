@@ -20,6 +20,10 @@ describe('Play', () => {
     expect(toJson(play)).toMatchSnapshot();
   });
 
+  it('should have a `Results` component', () => {
+    expect(play.find('Results').exists()).toBe(true);
+  });
+
   describe('when user clicks on an item', () => {
     let actions;
 
@@ -46,5 +50,6 @@ describe('Play', () => {
       play.find('.scissors').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
+
   });
 });
