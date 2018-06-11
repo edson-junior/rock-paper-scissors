@@ -5,7 +5,12 @@ import { createStore } from 'redux';
 import play from './reducers/play';
 import App from './components/App';
 
-const store = createStore(play);
+/* eslint-disable no-underscore-dangle */
+const store = createStore(
+  play,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
+/* eslint-enable */
 
 render(
   <Provider store={store}>
