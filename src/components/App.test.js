@@ -1,5 +1,5 @@
-import App from './App';
 import React from 'react';
+import App from './App';
 import { shallow, configure } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Adapter from 'enzyme-adapter-react-16';
@@ -20,4 +20,5 @@ describe('App', () => {
   it('should have a `Play` component', () => {
     expect(app.find('Connect(Play)').exists()).toBe(true);
   });
+
 });
