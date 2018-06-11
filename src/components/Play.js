@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addRock, addPaper, addScissors } from '../actions/play';
 
+/** Render the choices the players can make. */
 class Play extends Component {
   static propTypes = {
     onRock: PropTypes.func.isRequired,
@@ -22,10 +23,20 @@ class Play extends Component {
   }
 }
 
+/**
+ * Maps the redux state to props in the component.
+ * @param {object} state - The redux state being mapped.
+ * @returns {object} The mapped object.
+ */
 const mapStateToProps = state => ({
   store: state,
 });
 
+/**
+ * Maps the dispatch functions from redux to props in the component.
+ * @param {function} dispatch - The dispatch function.
+ * @returns {object} Object with mapped dispatch functions.
+ */
 const mapDispatchToProps = dispatch => ({
   onRock: id => dispatch(addRock(id)),
   onPaper: id => dispatch(addPaper(id)),

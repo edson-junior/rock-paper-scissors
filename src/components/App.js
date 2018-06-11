@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Play from './Play';
 
+/** Render the rock paper scissors assets */
 class App extends Component {
   render() {
     return (
