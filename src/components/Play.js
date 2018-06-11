@@ -1,27 +1,27 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addRock, addPaper, addScissors } from '../actions/play';
 
-/** Render the choices the players can make. */
-class Play extends Component {
-  static propTypes = {
-    onRock: PropTypes.func.isRequired,
-    onPaper: PropTypes.func.isRequired,
-    onScissors: PropTypes.func.isRequired,
-  }
-  render() {
-    const { onRock, onPaper, onScissors } = this.props;
+/**
+ * Render the choices the players can make.
+ * @param {object} props - The mapped props.
+ * @returns {*} The rendered component.
+ */
+const Play = ({ onRock, onPaper, onScissors }) => (
+  <Fragment>
+    <button className="rock" onClick={() => onRock('rock')}>rock</button>
+    <button className="paper" onClick={() => onPaper('paper')}>paper</button>
+    <button className="scissors" onClick={() => onScissors('scissors')}>scissors</button>
+  </Fragment>
+);
 
-    return (
-      <Fragment>
-        <button className="rock" onClick={() => onRock('rock')}>rock</button>
-        <button className="paper" onClick={() => onPaper('paper')}>paper</button>
-        <button className="scissors" onClick={() => onScissors('scissors')}>scissors</button>
-      </Fragment>
-    );
-  }
-}
+Play.propTypes = {
+  onRock: PropTypes.func.isRequired,
+  onPaper: PropTypes.func.isRequired,
+  onScissors: PropTypes.func.isRequired,
+};
+
 
 /**
  * Maps the redux state to props in the component.

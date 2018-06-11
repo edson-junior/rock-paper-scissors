@@ -22,7 +22,6 @@
     "strict": [2, "safe"],
     "no-console": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/prefer-stateless-function": 0,
     "require-jsdoc": [2, {
       "require": {
         "FunctionDeclaration": true,
