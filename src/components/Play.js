@@ -22,7 +22,6 @@ Play.propTypes = {
   onScissors: PropTypes.func.isRequired,
 };
 
-
 /**
  * Maps the redux state to props in the component.
  * @param {object} state - The redux state being mapped.

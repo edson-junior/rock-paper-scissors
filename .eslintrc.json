@@ -22,6 +22,7 @@
     "strict": [2, "safe"],
     "no-console": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "quotes": [2, "single"],
     "require-jsdoc": [2, {
       "require": {
         "FunctionDeclaration": true,
