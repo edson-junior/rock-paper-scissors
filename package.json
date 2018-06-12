@@ -7,7 +7,9 @@
     "dev:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
     "dev:nodemon": "./node_modules/.bin/nodemon start.js",
     "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
-    "test": "./node_modules/.bin/jest --watch"
+    "test": "./node_modules/.bin/jest",
+    "test:dev": "npm run test -- --watch",
+    "coverage": "npm run test -- --coverage"
   },
   "repository": {
     "type": "git",
@@ -64,7 +66,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!src/index.js"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx}",
