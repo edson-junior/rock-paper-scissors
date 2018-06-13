@@ -3,31 +3,33 @@ import * as constants from '../actions/constants';
 import play from './play';
 
 const initialState = constants.initialState;
-const payload = { type: constants.ROCK, rock: 'rock' };
-const payload2 = { type: constants.PAPER, paper: 'paper' };
-const payload3 = { type: constants.SCISSORS, scissors: 'scissors' };
+const rock = { type: constants.ROCK, rock: 'rock' };
+const paper = { type: constants.PAPER, paper: 'paper' };
+const scissors = { type: constants.SCISSORS, scissors: 'scissors' };
 
 describe('play', () => {
   it('should increment matches number', () => {
-    expect(play(constants.initialState, payload).matches).toEqual(1);
-    expect(play(constants.initialState, payload2).matches).toEqual(1);
-    expect(play(constants.initialState, payload3).matches).toEqual(1);
+    expect(play(constants.initialState, rock).matches).toEqual(1);
+    expect(play(constants.initialState, paper).matches).toEqual(1);
+    expect(play(constants.initialState, scissors).matches).toEqual(1);
   });
 
-  it('should return a string', () => {
-    expect(typeof play(constants.initialState, payload).result).toBe('string');
-    expect(typeof play(constants.initialState, payload2).result).toBe('string');
-    expect(typeof play(constants.initialState, payload3).result).toBe('string');
+  it('should check if choice is string', () => {
+    expect(typeof play(constants.initialState, rock).result).toBe('string');
+    expect(typeof play(constants.initialState, paper).result).toBe('string');
+    expect(typeof play(constants.initialState, scissors).result).toBe('string');
   });
 
-  it('should return numbers', () => {
-    expect(typeof play(constants.initialState, payload).user).toBe('number');
-    expect(typeof play(constants.initialState, payload2).user).toBe('number');
-    expect(typeof play(constants.initialState, payload3).user).toBe('number');
+  it('should check if user is number', () => {
+    expect(typeof play(constants.initialState, rock).user).toBe('number');
+    expect(typeof play(constants.initialState, paper).user).toBe('number');
+    expect(typeof play(constants.initialState, scissors).user).toBe('number');
+  });
 
-    expect(typeof play(constants.initialState, payload).computer).toBe('number');
-    expect(typeof play(constants.initialState, payload2).computer).toBe('number');
-    expect(typeof play(constants.initialState, payload3).computer).toBe('number');
+  it('should check if computer is number', () => {
+    expect(typeof play(constants.initialState, rock).computer).toBe('number');
+    expect(typeof play(constants.initialState, paper).computer).toBe('number');
+    expect(typeof play(constants.initialState, scissors).computer).toBe('number');
   });
 });
 
