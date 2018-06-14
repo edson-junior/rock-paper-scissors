@@ -20,14 +20,14 @@ function compare(state, user) {
 
   const computerWins = {
     ...state,
-    result: computer,
+    result: `Computer wins! You choose ${user} and computer ${computer}`,
     computer: state.computer + 1,
     matches: state.matches + 1,
   };
 
   const userWins = {
     ...state,
-    result: user,
+    result: `You win! Computer choose ${computer}`,
     user: state.user + 1,
     matches: state.matches + 1,
   };
@@ -35,7 +35,7 @@ function compare(state, user) {
   if (computer === user) {
     return {
       ...state,
-      result: 'tie',
+      result: `It's a tie! You choose ${user} and computer choose ${computer}`,
       matches: state.matches + 1,
     };
   }

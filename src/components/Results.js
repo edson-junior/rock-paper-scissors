@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
  */
 const Results = ({ store }) => (
   <div>
-    <h3>Result: You win!</h3>
+    <h3>Result: { store.result }</h3>
 
     <div>
       <h3>Score</h3>
