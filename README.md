@@ -45,7 +45,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 * [Edson Junior](https://github.com/edson-junior)
 
-See also the list of [contributors](https://github.com/edson-junior/btc-converter/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/edson-junior/rock-paper-scissors/contributors) who participated in this project.
 
 ## License
 
