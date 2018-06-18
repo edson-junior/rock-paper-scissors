@@ -45,6 +45,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 * [Edson Junior](https://github.com/edson-junior)
 
+See also the list of [contributors](https://github.com/edson-junior/btc-converter/contributors) who participated in this project.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
