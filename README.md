@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34600369/41532848-817f3ca2-72f0-11e8-9b08-af9da6a286a2.png" width="700">
+
 # Rock, Paper, Scissors
 
 ✂️ A yet another rock, paper, scissors game
