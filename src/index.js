@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import play from './reducers/play';
 import App from './components/App';
+import './scss/style.scss';
 
 /* eslint-disable no-underscore-dangle */
 const store = createStore(
