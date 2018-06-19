@@ -13,9 +13,18 @@ const Play = ({
   store, onRock, onPaper, onScissors,
 }) => (
   <Fragment>
-    <button className="rock" onClick={() => onRock('rock')}>rock</button>
-    <button className="paper" onClick={() => onPaper('paper')}>paper</button>
-    <button className="scissors" onClick={() => onScissors('scissors')}>scissors</button>
+    <button className="rock" onClick={() => onRock('rock')}>
+      <span role="img" aria-label="rock">✊</span>
+      rock
+    </button>
+    <button className="paper" onClick={() => onPaper('paper')}>
+      <span role="img" aria-label="paper">🖐️</span>
+      paper
+    </button>
+    <button className="scissors" onClick={() => onScissors('scissors')}>
+      <span role="img" aria-label="scissors">✌️ </span>
+      scissors
+    </button>
     <Results store={store} />
   </Fragment>
 );

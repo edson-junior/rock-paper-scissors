@@ -51,18 +51,36 @@ exports[`Play should render properly 1`] = `
       className="rock"
       onClick={[Function]}
     >
+      <span
+        aria-label="rock"
+        role="img"
+      >
+        ✊
+      </span>
       rock
     </button>
     <button
       className="paper"
       onClick={[Function]}
     >
+      <span
+        aria-label="paper"
+        role="img"
+      >
+        🖐️
+      </span>
       paper
     </button>
     <button
       className="scissors"
       onClick={[Function]}
     >
+      <span
+        aria-label="scissors"
+        role="img"
+      >
+        ✌️ 
+      </span>
       scissors
     </button>
     <Results
