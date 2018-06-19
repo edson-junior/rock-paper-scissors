@@ -35,7 +35,7 @@ function compare(state, user) {
   if (computer === user) {
     return {
       ...state,
-      result: `It's a tie! You choose ${user} and computer choose ${computer}`,
+      result: `It's a tie!`,
       matches: state.matches + 1,
     };
   }
