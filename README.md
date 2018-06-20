@@ -50,3 +50,7 @@ See also the list of [contributors](https://github.com/edson-junior/rock-paper-s
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* [Nuno Jesus](https://github.com/nunojesus) for designing the beautiful logo
