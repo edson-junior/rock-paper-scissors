@@ -6,6 +6,7 @@
   "scripts": {
     "build:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
     "build:nodemon": "./node_modules/.bin/nodemon start.js",
+    "build": "./node_modules/.bin/webpack --no-colors --config webpack.prod.js && node start.js",
     "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run build:webpack\" \"npm run build:nodemon\" --prefix-colors green",
     "lint": "./node_modules/.bin/eslint . --fix",
     "test": "./node_modules/.bin/jest",
