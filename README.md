@@ -6,7 +6,7 @@
 
 ✂️ A yet another rock, paper, scissors game
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md) [![Build Status](https://travis-ci.org/edson-junior/rock-paper-scissors.svg?branch=master)](https://travis-ci.org/edson-junior/rock-paper-scissors)
 
 ## The rules:
 
