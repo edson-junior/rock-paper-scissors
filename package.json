@@ -9,7 +9,6 @@
     "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
     "test": "./node_modules/.bin/jest",
     "preparecommitmsg": "npm run test",
-    "prepush": "npm run test",
     "test:dev": "npm run test -- --watch",
     "coverage": "npm run test -- --coverage"
   },
