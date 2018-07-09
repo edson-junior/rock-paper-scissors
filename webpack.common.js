@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
   },
   module: {
     rules: [
@@ -14,31 +14,31 @@ module.exports = {
           {
             loader: 'eslint-loader',
             options: {
-              fix: true
-            }
-          } 
-        ]
+              fix: true,
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      { 
-        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+      {
+        test: /\.(eot|woff|woff2|svg|ttf)([?]?.*)$/,
         use: [
           'file-loader',
           {
             loader: 'file-loader',
             options: {
-              publicPath: '/dist/'
-            }
-          }
-        ]
-      }
-    ]
+              publicPath: '/dist/',
+            },
+          },
+        ],
+      },
+    ],
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'public/dist')
-  }
+    path: path.resolve(__dirname, 'public/dist'),
+  },
 };
