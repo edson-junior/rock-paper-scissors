@@ -4,9 +4,9 @@
   "description": "A yet another rock paper scissors game",
   "main": "index.js",
   "scripts": {
-    "dev:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
-    "dev:nodemon": "./node_modules/.bin/nodemon start.js",
-    "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run dev:webpack\" \"npm run dev:nodemon\" --prefix-colors green",
+    "build:webpack": "./node_modules/.bin/webpack --colors --display-error-details --config webpack.dev.js -w",
+    "build:nodemon": "./node_modules/.bin/nodemon start.js",
+    "dev": "./node_modules/.bin/concurrently --names \"webpack,nodemon\" --prefix name \"npm run build:webpack\" \"npm run build:nodemon\" --prefix-colors green",
     "lint": "./node_modules/.bin/eslint . --fix",
     "test": "./node_modules/.bin/jest",
     "preparecommitmsg": "npm run test",
