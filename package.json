@@ -11,6 +11,11 @@
     "test:dev": "npm run test -- --watch",
     "coverage": "npm run test -- --coverage"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edson-junior/rock-paper-scissors.git"
@@ -49,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.9.1",
     "file-loader": "^1.1.11",
+    "husky": "^0.14.3",
     "jest": "^23.1.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
