@@ -19,14 +19,8 @@
 
 ### How to Run
 
-#### Install the dependencies:
-```
-npm i
-```
-#### Run application:
-```
-npm run dev
-```
+1. Install the dependencies: ``` npm i ```
+2. Run application: ``` npm run dev ```
 
 ## Running the tests
 
