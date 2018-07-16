@@ -8,8 +8,8 @@ import PropTypes from 'prop-types';
  */
 const Results = ({ store }) => (
   <div>
-    <h3>Result: { store.result }</h3>
-
+    <h3>Result</h3>
+    <p>{ store.result }</p>
     <div>
       <h3>Score</h3>
       <p>User: { store.user }</p>

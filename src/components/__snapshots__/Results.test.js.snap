@@ -3,8 +3,9 @@
 exports[`Results should render properly 1`] = `
 <div>
   <h3>
-    Result: 
+    Result
   </h3>
+  <p />
   <div>
     <h3>
       Score
