@@ -8,6 +8,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md) [![Build Status](https://travis-ci.org/edson-junior/rock-paper-scissors.svg?branch=master)](https://travis-ci.org/edson-junior/rock-paper-scissors) [![Coverage Status](https://coveralls.io/repos/github/edson-junior/rock-paper-scissors/badge.svg?branch=master)](https://coveralls.io/github/edson-junior/rock-paper-scissors?branch=master)
 
+![Example](example.gif)
+
 ## The rules:
 
 - Scissors beats Paper
