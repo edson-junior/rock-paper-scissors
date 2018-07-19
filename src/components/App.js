@@ -3,7 +3,7 @@ import Play from './Play';
 
 const App = () => (
   <Fragment>
-    <img className="logo" src="/Logotype_horizontal.svg" width="400" height="104" alt="" />
+    <img className="logo" src="/Logotype_horizontal.svg" width="300" height="77" alt="" />
     <hr />
     <Play />
   </Fragment>

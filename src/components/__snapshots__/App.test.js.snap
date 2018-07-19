@@ -5,9 +5,9 @@ exports[`App renders properly 1`] = `
   <img
     alt=""
     className="logo"
-    height="104"
+    height="77"
     src="/Logotype_horizontal.svg"
-    width="400"
+    width="300"
   />
   <hr />
   <Connect(Play) />
