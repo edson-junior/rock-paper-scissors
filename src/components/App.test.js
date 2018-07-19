@@ -13,8 +13,8 @@ describe('App', () => {
     expect(toJson(app)).toMatchSnapshot();
   });
 
-  it('should have title', () => {
-    expect(app.find('h3').text()).toEqual('Rock Paper Scissors');
+  it('should have a logo', () => {
+    expect(app.find('img.logo').exists()).toBe(true);
   });
 
   it('should have a `Play` component', () => {
