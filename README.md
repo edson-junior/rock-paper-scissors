@@ -1,6 +1,6 @@
 <p align="center">
   
-![Rock Paper Scissors](/logo/Logotype_horizontal.svg)
+<img src="/logo/Logotype_horizontal.svg" width="600" alt="Rock Paper Scissors" />
 
 ---
 
