@@ -79,7 +79,7 @@ exports[`Play should render properly 1`] = `
         aria-label="scissors"
         role="img"
       >
-        ✌️ 
+        ✌️
       </span>
       scissors
     </button>
