@@ -9,11 +9,11 @@ import configureStore from 'redux-mock-store';
 configure({ adapter: new Adapter() });
 
 const initialState = constants.initialState;
-const middlewares = []
-const mockStore = configureStore(middlewares)
+const middlewares = [];
+const mockStore = configureStore(middlewares);
 const store = mockStore(initialState);
 const props = { store };
-const play = mount(<Play { ...props } />);
+const play = mount(<Play {...props} />);
 
 describe('Play', () => {
   it('should render properly', () => {
@@ -27,7 +27,7 @@ describe('Play', () => {
   describe('when user clicks on an item', () => {
     let actions;
 
-    beforeEach(() => actions = store.getActions());
+    beforeEach(() => (actions = store.getActions()));
     afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
@@ -50,6 +50,5 @@ describe('Play', () => {
       play.find('.scissors').simulate('click');
       expect(actions[0]).toEqual(payload);
     });
-
   });
 });

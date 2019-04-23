@@ -9,12 +9,12 @@ import configureStore from 'redux-mock-store';
 configure({ adapter: new Adapter() });
 
 const initialState = constants.initialState;
-const middlewares = []
-const mockStore = configureStore(middlewares)
+const middlewares = [];
+const mockStore = configureStore(middlewares);
 const store = mockStore(initialState);
 const props = { store };
 
-const results = shallow(<Results { ...props } />);
+const results = shallow(<Results {...props} />);
 
 describe('Results', () => {
   it('should render properly', () => {

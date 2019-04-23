@@ -29,7 +29,8 @@ describe('play', () => {
   it('should check if computer is number', () => {
     expect(typeof play(constants.initialState, rock).computer).toBe('number');
     expect(typeof play(constants.initialState, paper).computer).toBe('number');
-    expect(typeof play(constants.initialState, scissors).computer).toBe('number');
+    expect(typeof play(constants.initialState, scissors).computer).toBe(
+      'number',
+    );
   });
 });
-

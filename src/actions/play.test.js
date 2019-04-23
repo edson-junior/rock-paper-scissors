@@ -3,15 +3,15 @@ import * as constants from './constants';
 import { addRock, addPaper, addScissors } from '../actions/play';
 
 const initialState = constants.initialState;
-const middlewares = []
-const mockStore = configureStore(middlewares)
+const middlewares = [];
+const mockStore = configureStore(middlewares);
 const store = mockStore(initialState);
 
 describe('Play', () => {
   describe('when the user dispatches an item', () => {
     let actions;
 
-    beforeEach(() => actions = store.getActions());
+    beforeEach(() => (actions = store.getActions()));
     afterEach(() => store.clearActions());
 
     it('should dispatch rock', () => {
@@ -22,7 +22,7 @@ describe('Play', () => {
     });
 
     it('should dispatch paper', () => {
-      const paper = 'paper'
+      const paper = 'paper';
       const payload = { type: constants.PAPER, paper };
       store.dispatch(addPaper(paper));
       expect(actions[0]).toEqual(payload);

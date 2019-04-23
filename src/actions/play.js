@@ -29,4 +29,3 @@ export const addScissors = scissors => ({
   type: constants.SCISSORS,
   scissors,
 });
-

@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-const app = shallow(<App />)
+const app = shallow(<App />);
 
 describe('App', () => {
   it('renders properly', () => {
@@ -20,5 +20,4 @@ describe('App', () => {
   it('should have a `Play` component', () => {
     expect(app.find('Connect(Play)').exists()).toBe(true);
   });
-
 });

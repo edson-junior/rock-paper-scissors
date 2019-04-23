@@ -9,20 +9,24 @@ import { addRock, addPaper, addScissors } from '../actions/play';
  * @param {object} props - The mapped props.
  * @returns {*} The rendered component.
  */
-const Play = ({
-  store, onRock, onPaper, onScissors,
-}) => (
+const Play = ({ store, onRock, onPaper, onScissors }) => (
   <Fragment>
     <button className="rock" onClick={() => onRock('rock')}>
-      <span role="img" aria-label="rock">✊</span>
+      <span role="img" aria-label="rock">
+        ✊
+      </span>
       rock
     </button>
     <button className="paper" onClick={() => onPaper('paper')}>
-      <span role="img" aria-label="paper">🖐️</span>
+      <span role="img" aria-label="paper">
+        🖐️
+      </span>
       paper
     </button>
     <button className="scissors" onClick={() => onScissors('scissors')}>
-      <span role="img" aria-label="scissors">✌️ </span>
+      <span role="img" aria-label="scissors">
+        ✌️
+      </span>
       scissors
     </button>
     <Results store={store} />
@@ -56,4 +60,7 @@ const mapDispatchToProps = dispatch => ({
   onScissors: id => dispatch(addScissors(id)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Play);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Play);

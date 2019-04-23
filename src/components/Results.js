@@ -9,12 +9,12 @@ import PropTypes from 'prop-types';
 const Results = ({ store }) => (
   <div>
     <h3>Result</h3>
-    <p>{ store.result }</p>
+    <p>{store.result}</p>
     <div>
       <h3>Score</h3>
-      <p>User: { store.user }</p>
-      <p>Computer: { store.computer }</p>
-      <p>Matches: { store.matches }</p>
+      <p>User: {store.user}</p>
+      <p>Computer: {store.computer}</p>
+      <p>Matches: {store.matches}</p>
     </div>
   </div>
 );
