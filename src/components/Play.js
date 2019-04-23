@@ -9,7 +9,9 @@ import { addRock, addPaper, addScissors } from '../actions/play';
  * @param {object} props - The mapped props.
  * @returns {*} The rendered component.
  */
-const Play = ({ store, onRock, onPaper, onScissors }) => (
+const Play = ({
+  store, onRock, onPaper, onScissors,
+}) => (
   <Fragment>
     <button className="rock" onClick={() => onRock('rock')}>
       <span role="img" aria-label="rock">
